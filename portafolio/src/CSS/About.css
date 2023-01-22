@@ -1,0 +1,53 @@
+.luna{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: 10px 5px 0 var(--hover);
+}
+.container-about{
+    background: var(--fondo-about);
+    display: flex;
+    color: var(--color-fondo);
+    padding: 24px;
+}
+.about-left{
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    align-items: center;
+    border-right: 2px solid var(--red-sweet);
+    justify-content: center;
+}
+.about-left h1{
+    padding: 0 50px;
+}
+.about-left p {
+    text-align: center;
+    padding: 0 30px;
+    margin: 0px 70px;
+    font-weight: 400;
+}
+.about-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 50%;
+    flex-wrap: nowrap;
+    align-content: center;
+    width: 100%;
+}
+.about-right-images{
+    display: flex;
+
+}
+.about-right-images img  {
+    width: 90px;
+    height: 90px;
+}
+.about-left img {
+    height: 160px;
+    width: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+}

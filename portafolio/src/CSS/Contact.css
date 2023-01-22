@@ -1,0 +1,107 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+.container-form{
+  box-shadow: 7px 7px 19px 0px rgb(0 0 0 / 30%);
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 8px;
+}
+.container-contact{
+  text-align: center;
+  display: flex;
+  width: 60%;
+  border-radius: 8px 0 0 8px;
+  flex-direction: column;
+  align-items: center;
+  background: var(--card-color);
+}
+.container-contact h1{
+  font-size: 40px;
+  text-align: center;
+  color: var(--red-sweet);
+  border-bottom: solid;
+}
+.container-contact-items{
+  display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.container-contact p {
+  color: var(--red-sweet);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-contact p span{
+  font-weight: 900;
+  margin-right: 36px;
+}
+.container-contact p svg{
+  font-size: 28px;
+  background-color: var(--color-fondo);
+  padding: 16px;
+  border-radius: 50%;
+  color: var(--red-sweet);
+  margin-right: 8px;
+}
+.container-contact-items:nth-child(2){
+  color: aqua !important ;
+}
+form {
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.feedback-input {
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border: 2px solid var(--red-sweet);
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.feedback-input:focus {
+  border: 2px solid var(--fondo-about);
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+
+[type="submit"] {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  width: 100%;
+  background: var(--red-sweet);
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.3s;
+  margin-top: -4px;
+  font-weight: 700;
+}
+[type="submit"]:hover {
+  background: var(--fondo-about);
+}
+
+.section-form{
+  display: flex;
+  justify-content: center;
+}

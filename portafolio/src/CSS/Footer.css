@@ -1,0 +1,34 @@
+footer .redes-sociales {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+footer .redes-sociales a {
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: var(--fondo-about);
+    margin: 20px;
+    text-align: center;
+    border-radius: 100px;
+    transition: 0.3s ease all;
+    color: #f3f3f3;
+  }
+  
+  footer .redes-sociales a svg {
+    font-size: 30px;
+    line-height: 60px;
+    margin-top: 14px;
+  }
+  footer .contenedor-icono:hover a {
+    animation: icono .5s ease;
+}
+@keyframes icono{
+    from{
+        transform: rotate3d(0,0,0,0);
+    }
+    to{
+        transform: rotate3d(0,1,0,360deg);
+    }
+}

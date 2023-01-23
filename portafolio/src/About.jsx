@@ -6,6 +6,7 @@ import js from "../public/assets/js.png";
 import react from "../public/assets/react.png";
 import csharp from "../public/assets/C.png";
 import sql from "../public/assets/sql-server.png";
+import mySql from "../public//assets/mysql.png"
 
 
 const About = () => {
@@ -31,6 +32,7 @@ const About = () => {
         <div className="about-right-images">
           <img src={csharp} alt="csharp" />
           <img src={sql} alt="sql" />
+          <img src={mySql} alt="mysql" />
         </div>
         <p>Tecnologies: Bootstrap, .NET, Sass, npm</p>
       </div>

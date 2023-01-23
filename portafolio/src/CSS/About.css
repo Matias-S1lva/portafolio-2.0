@@ -41,6 +41,7 @@
 }
 .about-right-images {
   display: flex;
+  gap: 20px;
 }
 .about-right-images img {
   width: 90px;

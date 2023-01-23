@@ -42,6 +42,8 @@
 .about-right-images {
   display: flex;
   gap: 20px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 .about-right-images img {
   width: 90px;

@@ -1,53 +1,74 @@
-.luna{
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    box-shadow: 10px 5px 0 var(--hover);
+.luna {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  box-shadow: 10px 5px 0 var(--hover);
 }
-.container-about{
-    background: var(--fondo-about);
-    display: flex;
-    color: var(--color-fondo);
-    padding: 24px;
+.container-about {
+  background: var(--fondo-about);
+  display: flex;
+  color: var(--color-fondo);
+  padding: 24px;
 }
-.about-left{
-    display: flex;
-    flex-direction: column;
-    max-width: 50%;
-    align-items: center;
-    border-right: 2px solid var(--red-sweet);
-    justify-content: center;
+.about-left {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  align-items: center;
+  border-right: 2px solid var(--red-sweet);
+  justify-content: center;
 }
-.about-left h1{
-    padding: 0 50px;
+.about-left h1 {
+  padding: 0 50px;
 }
 .about-left p {
-    text-align: center;
-    padding: 0 30px;
-    margin: 0px 70px;
-    font-weight: 400;
+  text-align: center;
+  padding: 0 30px;
+  margin: 0px 70px;
+  font-weight: 400;
 }
-.about-right{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 50%;
-    flex-wrap: nowrap;
-    align-content: center;
-    width: 100%;
+.about-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 50%;
+  flex-wrap: nowrap;
+  align-content: center;
+  width: 100%;
+  justify-content: space-between;
 }
-.about-right-images{
-    display: flex;
-
+.about-right-images {
+  display: flex;
 }
-.about-right-images img  {
-    width: 90px;
-    height: 90px;
+.about-right-images img {
+  width: 90px;
+  height: 90px;
 }
 .about-left img {
-    height: 160px;
-    width: 160px;
-    object-fit: cover;
-    border-radius: 50%;
+  height: 160px;
+  width: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+@media (max-width: 950px) {
+  .container-about {
+    flex-direction: column;
+  }
+  .about-left {
+    border: none;
+    border-bottom: 2px solid var(--red-sweet);
+    padding-bottom: 24px;
+    max-width: 100%;
+  }
+  .about-left h1 {
+    padding: 0;
+  }
+  .about-left p {
+    padding: 0;
+    margin: 0;
+  }
+  .about-right{
+    max-width: 100%;
+  }
 }

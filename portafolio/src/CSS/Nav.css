@@ -48,3 +48,21 @@
 .navbar ul li a:hover::after {
   transform: scale(1,1);
 }
+.menu-responsive .menu-dropdown, .navbar .menu-responsive{
+  display: none ;
+}
+@media (max-width:950px){
+  .navbar > .navbar-right{
+    display: none;
+  }
+  .menu-dropdown{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    background: var(--red-sweet);
+    position: absolute;
+  }
+  .menu-responsive{
+    position: relative;
+  }
+}

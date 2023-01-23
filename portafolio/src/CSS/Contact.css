@@ -103,3 +103,31 @@ textarea {
   display: flex;
   justify-content: center;
 }
+@media (max-width:950px){
+  .container-form{
+    flex-direction: column;
+  }
+  .container-contact{
+    width: 100%;
+  }
+  .container-contact p {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 4px;
+  }
+  .container-contact h1 {
+    font-size: 32px;
+  }
+  .container-contact p svg {
+    font-size: 16px;
+    padding: 12px;
+  }
+  .container-contact p span{
+    margin-right: 0;
+  }
+  .container-contact-items{
+    align-items: center;
+    flex-direction: column;
+  }
+}

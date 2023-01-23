@@ -34,6 +34,7 @@ const About = () => {
         </div>
         <p>Tecnologies: Bootstrap, .NET, Sass, npm</p>
       </div>
+      
     </div>
   );
 };

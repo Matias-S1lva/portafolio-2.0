@@ -22,6 +22,10 @@
     --fondo-form: #303030;
     --red-sweet: #0096FF;
 }
+html {
+   scroll-behavior: smooth;
+  }
+
 body{
     padding: 0;
     margin: 0;

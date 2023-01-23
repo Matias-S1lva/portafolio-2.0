@@ -1,5 +1,6 @@
 import "./CSS/Section.css";
 
+
 const Section = (props) => {
   return (
     <>
@@ -11,10 +12,11 @@ const Section = (props) => {
         ></path>
       </svg>
       <section className="container-section">
-        <h1>Proyectos</h1>
+        <h1 id="proyectos">Proyectos</h1>
         <div className="container-cards">{props.children}</div>
       </section>
     </>
+    
   );
 };
 

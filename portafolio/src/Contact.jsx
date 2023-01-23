@@ -29,12 +29,12 @@ const Contact = () => {
           <div className="container-contact-items">
             <p>
               <FontAwesomeIcon icon={faPhone} />
-              <span> Phone: </span>
+              <span> Telefono: </span>
               1125280686
             </p>
             <p>
               <FontAwesomeIcon icon={faLocationDot} />
-              <span> Location: </span>
+              <span> Ubicacion: </span>
               Buenos Aires, San Martin
             </p>
             <p>
@@ -52,7 +52,7 @@ const Contact = () => {
             name="user_name"
             type="text"
             className="feedback-input"
-            placeholder="Name"
+            placeholder="Nombre"
           />
           <input
             name="user_mail"
@@ -63,9 +63,9 @@ const Contact = () => {
           <textarea
             name="user_message"
             className="feedback-input"
-            placeholder="Comment"
+            placeholder="Escribir mensaje"
           ></textarea>
-          <input type="submit" value="SUBMIT" />
+          <input type="submit" value="ENVIAR" />
         </form>
       </div>
     </section>

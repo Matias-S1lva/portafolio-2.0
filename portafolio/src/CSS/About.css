@@ -6,7 +6,8 @@
   box-shadow: 10px 5px 0 var(--hover);
 }
 .container-about {
-  background: var(--fondo-about);
+  background: var(--blue-light);
+ 
   display: flex;
   color: var(--color-fondo);
   padding: 24px;

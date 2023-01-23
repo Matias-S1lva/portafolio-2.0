@@ -102,6 +102,7 @@ textarea {
 .section-form{
   display: flex;
   justify-content: center;
+  margin-top: 80px;
 }
 @media (max-width:950px){
   .container-form{

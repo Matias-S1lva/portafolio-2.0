@@ -1,3 +1,7 @@
+footer{
+  margin-top: 80px;
+}
+
 footer .redes-sociales {
     display: flex;
     justify-content: center;

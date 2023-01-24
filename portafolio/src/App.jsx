@@ -33,12 +33,7 @@ const cards = [
     title: "task app",
     description: "aplicacion web para crear, guardar y borrar tareas",
   },
-  {
-    url: "http://webfinal.somee.com/",
-    foto: "./assets/tupac.jpg",
-    title: "Web Escuela",
-    description: "Sitio web escolar, login, abm usuarios y carreras",
-  },
+
   {
     url: "https://node-mysql-app-production.up.railway.app/",
     foto: "./assets/favorite-links.jpg",

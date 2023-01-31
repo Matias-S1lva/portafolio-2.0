@@ -15,7 +15,7 @@ const About = () => {
       <figure className="luna"></figure>
       <div className="about-left">
         <img src={perfil} alt="" />
-        <h1>Matias Silva | Frontend Developer</h1>
+        <h1 id="sobre-mi">Matias Silva | Frontend Developer</h1>
         <p>
         Soy desarrollador web, actualmente estoy terminado la tecnicatura de Analista de Sistemas, busco orientar mis habilidades tecnicas y de analisis para desempeñarme en el desarrollo de software
         </p>

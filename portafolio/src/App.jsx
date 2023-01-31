@@ -16,6 +16,12 @@ const cards = [
     description: "diseño de ecommerce interactivo consumiendo una API",
   },
   {
+    url: "http://webfinal.somee.com/",
+    foto: "./assets/tupac.jpg",
+    title: "Web escuela",
+    description: "sitio web escolar, login y abm usuarios",
+  },
+  {
     url: "https://cool-sable-5fd591.netlify.app/",
     foto: "./assets/star-wars.jpg",
     title: "star wars gallery",

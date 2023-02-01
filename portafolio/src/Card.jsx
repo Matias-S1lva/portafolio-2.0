@@ -1,21 +1,21 @@
 import "./CSS/Card.css";
 
+const Card = ({ foto, title, color, description, tecnologies, children }) => {
+  const getAlt = (path) => {
+    return path.split("/")[-1];
+  };
 
-
-const Card = ({ url, foto, title, color, description, tecnologies,children }) => {
   return (
     <div className="card" style={color} data-aos="zoom-in">
-      <img src={foto} alt={url[0].split("/")[-1]} />
+      <img src={foto} alt={getAlt(foto)} />
       <span>{title}</span>
       <p>{description}</p>
       <div className="card-tecnologies">
         {tecnologies.map((tecnologie) => (
-          <img src={tecnologie} alt={tecnologie.split("/")[-1]} />
+          <img src={tecnologie} alt={getAlt(tecnologie)} />
         ))}
       </div>
-      <div className="container-buttons">
-        {children}
-      </div>
+      <div className="container-buttons">{children}</div>
     </div>
   );
 };

@@ -15,21 +15,21 @@ import { Footer } from "./Footer";
 
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-const url = "./assets/";
+
 const cards = [
   {
     url: [
       "https://matias-s1lva.github.io/react-shop/",
       "https://github.com/Matias-S1lva/react-shop",
     ],
-    foto: url + "react-shop.jpg",
+    foto: "./assets/react-shop.jpg",
     title: "react shop",
     description: "diseño de ecommerce interactivo consumiendo una API",
     tecnologies: [
-      url + "react.png",
-      url + "HTML.png",
-      url + "css.png",
-      url + "js.png",
+      "./assets/react.png",
+      "./assets/HTML.png",
+      "./assets/css.png",
+      "./assets/js.png",
     ],
   },
   {
@@ -37,15 +37,15 @@ const cards = [
       "http://webfinal.somee.com/",
       "https://github.com/Matias-S1lva/web-escuela-final",
     ],
-    foto: url + "tupac.jpg",
+    foto: "./assets/tupac.jpg",
     title: "Web escuela",
     description: "sitio web escolar, login y abm usuarios",
     tecnologies: [
-      url + "HTML.png",
-      url + "css.png",
-      url + "js.png",
-      url + "C.png",
-      url + "sql-server.png",
+      "./assets/HTML.png",
+      "./assets/css.png",
+      "./assets/js.png",
+      "./assets/C.png",
+      "./assets/sql-server.png",
     ],
   },
   {
@@ -53,16 +53,16 @@ const cards = [
       "https://node-mysql-app-production.up.railway.app/",
       "https://github.com/Matias-S1lva/Node-mySql-app",
     ],
-    foto: url + "favorite-links.jpg",
+    foto: "./assets/favorite-links.jpg",
     title: "Favorite Links",
     description: "Sitio web para guardar enlaces con Login y Registro",
     tecnologies: [
-      url + "HTML.png",
-      url + "css.png",
-      url + "js.png",
-      url + "bootstrap.png",
-      url + "mysql.png",
-      url + "node.png",
+      "./assets/HTML.png",
+      "./assets/css.png",
+      "./assets/js.png",
+      "./assets/bootstrap.png",
+      "./assets/mysql.png",
+      "./assets/node.png",
     ],
   },
   {
@@ -70,25 +70,25 @@ const cards = [
       "https://cool-sable-5fd591.netlify.app/",
       "https://github.com/Matias-S1lva/galeria-Star-Wars",
     ],
-    foto: url + "star-wars.jpg",
+    foto: "./assets/star-wars.jpg",
     title: "star wars gallery",
     description: "galeria de imagenes con filtros y barra de busqueda",
-    tecnologies: [url + "HTML.png", url + "css.png", url + "js.png"],
+    tecnologies: ["./assets/HTML.png", "./assets/css.png", "./assets/js.png"],
   },
   {
     url: [
       "https://matias-s1lva.github.io/rick-and-morty/",
       "https://github.com/Matias-S1lva/rick-and-morty",
     ],
-    foto: url + "rick-morty.jpg",
+    foto: "./assets/rick-morty.jpg",
     title: "API Rick and Morty",
     description: "galeria dinamica consumiendo API con react",
     tecnologies: [
-      url + "HTML.png",
-      url + "css.png",
-      url + "js.png",
-      url + "react.png",
-      url + "bootstrap.png",
+      "./assets/HTML.png",
+      "./assets/css.png",
+      "./assets/js.png",
+      "./assets/react.png",
+      "./assets/bootstrap.png",
     ],
   },
   {
@@ -96,15 +96,15 @@ const cards = [
       "https://matias-s1lva.github.io/react-tasks-app/",
       "https://github.com/Matias-S1lva/react-tasks-app",
     ],
-    foto: url + "task-react.jpg",
+    foto: "./assets/task-react.jpg",
     title: "task app",
     description: "aplicacion web para crear, guardar y borrar tareas",
     tecnologies: [
-      url + "HTML.png",
-      url + "css.png",
-      url + "js.png",
-      url + "react.png",
-      url + "bootstrap.png",
+      "./assets/HTML.png",
+      "./assets/css.png",
+      "./assets/js.png",
+      "./assets/react.png",
+      "./assets/bootstrap.png",
     ],
   },
 ];
@@ -157,7 +157,6 @@ function App() {
             description={card.description}
             tecnologies={card.tecnologies}
           >
-            
             <Button url={card.url[0]} icon={faGlobe}></Button>
             <Button url={card.url[1]} icon={faGithub}></Button>
           </Card>

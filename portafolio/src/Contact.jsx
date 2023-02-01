@@ -10,10 +10,7 @@ import {
   faPaperPlane,
 } from "@fortawesome/free-solid-svg-icons";
 
-const Contact = ({children,success}) => {
-  
-  
-
+const Contact = ({ children, success }) => {
   return (
     <section className="section-form">
       {success && <Success />}

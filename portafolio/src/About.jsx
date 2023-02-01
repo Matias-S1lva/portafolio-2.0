@@ -7,20 +7,21 @@ import react from "../public/assets/react.png";
 import csharp from "../public/assets/C.png";
 import sql from "../public/assets/sql-server.png";
 import mySql from "../public//assets/mysql.png"
+import node from "../public//assets/node.png"
 
 
 const About = () => {
   return (
     <div className="container-about">
       <figure className="luna"></figure>
-      <div className="about-left">
+      <div className="about-left" data-aos="fade-right">
         <img src={perfil} alt="" />
         <h1 id="sobre-mi">Matias Silva | Frontend Developer</h1>
         <p>
         Soy desarrollador web, actualmente estoy terminado la tecnicatura de Analista de Sistemas, busco orientar mis habilidades tecnicas y de analisis para desempeñarme en el desarrollo de software
         </p>
       </div>
-      <div className="about-right">
+      <div className="about-right" data-aos="fade-left">
           <h2>Frontend skills:</h2>
         <div className="about-right-images">
           <img src={html} alt="html" />
@@ -33,8 +34,9 @@ const About = () => {
           <img src={csharp} alt="csharp" />
           <img src={sql} alt="sql" />
           <img src={mySql} alt="mysql" />
+          <img src={node} alt="node" />
         </div>
-        <p>Tecnologies: Bootstrap, .NET, Sass, npm</p>
+        <p>Tecnologies: .NET 4.8, Asp.Net, Vite.js, Sass, Bootstrap</p>
       </div>
       
     </div>

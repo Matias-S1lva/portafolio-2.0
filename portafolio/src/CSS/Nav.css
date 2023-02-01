@@ -39,9 +39,7 @@
 .navbar ul li a:hover {
   color: var(--hover);
 }
-.navbar ul li a {
-  display: table;
-}
+
 .navbar ul li a::after {
   content: "";
   display: block;
@@ -61,15 +59,18 @@
   display: none;
 }
 @media (max-width: 950px) {
+  .navbar ul li a {
+    font-size: 24px;
+  }
   .navbar svg {
     margin-right: 20px;
-    transition: all .3s;
+    transition: all 0.3s;
   }
-  .navbar svg :hover{
+  .navbar svg :hover {
     color: var(--hover);
     cursor: pointer;
   }
- 
+
   .navbar {
     justify-content: space-between;
     align-items: center;
@@ -87,19 +88,22 @@
   .menu-oculto {
     display: flex;
     margin: 0;
-    height: 200px;
+    height: 300px;
     width: 100%;
+    padding-left: 20px;
     position: absolute;
     top: 0;
+    right: 0;
     z-index: 10;
     flex-direction: column;
     background: var(--hover);
     flex-wrap: nowrap;
     justify-content: space-between;
-    align-items: flex-start;
-    transition: all .3s;
+    align-items: center;
+    transition: all 0.3s;
   }
   .menu-oculto li:nth-child(1) {
-    font-size: 20px;
+    align-self: flex-end;
+    margin-right: 16px;
   }
 }

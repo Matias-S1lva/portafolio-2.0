@@ -8,28 +8,29 @@
 }
 .container-cards {
   display: grid;
-  grid-auto-rows: 380px;
+  grid-auto-rows: auto;
   gap: 20px;
-  grid-template-columns: repeat(auto-fit, 300px);
+  grid-template-columns: repeat(auto-fit, 350px);
   justify-content: center;
   justify-items: stretch;
 }
 .card {
   display: flex;
-  background: #e8e8e8;
   color: var(--color-fondo);
   font-weight: 400;
   border-radius: 12px;
   flex-direction: column;
+  transition: all 0.3s;
+  box-shadow: 0px -1px 11px 6px rgb(0 0 0 / 15%);
+  justify-content: space-between;
   align-items: center;
-  transition: all .3s;
-  box-shadow: 0px -1px 11px 6px rgba(0, 0, 0, 0.15);
 }
 .card:hover {
-    transform: scale(0.9);
+  transform: scale(0.9);
 }
-.card p, .card span{
-    text-align: center;
+.card p,
+.card span {
+  text-align: center;
 }
 .card span {
   padding-top: 8px;
@@ -37,82 +38,99 @@
 }
 .card button {
   color: rgb(9 9 9);
-  margin: 0.7em 1.7em;
-  font-size: 14px;
-  border-radius: 0.5em;
-  width: 50%;
+  border-radius: 8px;
   background: rgb(232 232 232);
   border: 1px solid rgb(232 232 232);
 }
 
 .card img {
   height: 200px;
-  width: 300px;
+  width: 350px;
   object-fit: cover;
   border-radius: 8px 8px 0 0;
 }
+.card-tecnologies img {
+  width: 32px;
+  height: 32px;
+}
+.card-tecnologies h3 {
+  text-align: center;
+  margin: 8px 0;
+}
+.card-tecnologies {
+  color: var(--fondo-about);
+  background: var(--color-fondo);
+  padding: 0 16px;
+  border-radius: 8px;
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 /* BUTTON STYLES */
+.container-buttons {
+  display: flex;
+  width: 100%;
+  margin: 14px 0;
+  justify-content: space-evenly;
+}
 button {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    background: var(--color-fondo);
-    font-family: "Montserrat", sans-serif;
-    box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    border: none;
-   }
-   
-   button:after {
-    content: " ";
-    width: 0%;
-    height: 100%;
-    background: white;
-    position: absolute;
-    transition: all 0.4s ease-in-out;
-    right: 0;
-   }
-   
-   button:hover::after {
-    right: auto;
-    left: 0;
-    width: 100%;
-   }
-   
-   button a {
-    text-align: center;
-    text-decoration: none;
-    width: 100%;
-    padding: 18px 25px;
-    color: var(--fondo-about);
-    font-size: 1.125em;
-    font-weight: 700;
-    letter-spacing: 0.3em;
-    z-index: 20;
-    transition: all 0.3s ease-in-out;
-   }
-   
-   button:hover a {
-    color: #183153;
-    animation: scaleUp 0.3s ease-in-out;
-   }
-   
-   @keyframes scaleUp {
-    0% {
-     transform: scale(1);
-    }
-   
-    50% {
-     transform: scale(0.95);
-    }
-   
-    100% {
-     transform: scale(1);
-    }
-   }
-   
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 0px 6px 24px 0px rgb(0 0 0 / 20%);
+  overflow: hidden;
+}
+
+button:after {
+  content: " ";
+  width: 0%;
+  height: 100%;
+  background: white;
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+  right: 0;
+}
+
+button:hover::after {
+  right: auto;
+  left: 0;
+  width: 100%;
+}
+
+button a {
+  text-align: center;
+  width: 100%;
+  font-size: 1.125em;
+  font-weight: 700;
+  border-radius: 50%;
+  letter-spacing: 0.3em;
+  padding: 12px;
+  z-index: 20;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover a {
+  color: #183153;
+  animation: scaleUp 0.3s ease-in-out;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.95);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
 /* BUTTON STYLES */
 
 button a {

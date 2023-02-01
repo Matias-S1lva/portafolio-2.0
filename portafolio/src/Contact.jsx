@@ -1,4 +1,5 @@
 import "./CSS/Contact.css";
+import AOS from 'aos';
 import emailjs from "@emailjs/browser";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -7,7 +8,7 @@ import {
   faPaperPlane,
 } from "@fortawesome/free-solid-svg-icons";
 
-
+AOS.init()
 const Contact = () => {
   const sendMail = (event) => {
     event.preventDefault();
@@ -23,8 +24,8 @@ const Contact = () => {
   };
 
   return (
-    <section className="section-form">
-        <div className="container-form">
+    <section className="section-form" >
+        <div className="container-form" data-aos="fade-up">
           <div className="container-contact">
             <h1 id="contacto">Contacto</h1>
             <div className="container-contact-items">

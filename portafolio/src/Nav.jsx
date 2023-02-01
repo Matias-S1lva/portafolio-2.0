@@ -17,7 +17,7 @@ const Nav = () => {
   }
 
   return (
-    <nav className="navbar">
+    <nav className="navbar" >
      
       
       <ul className="navbar-left">
@@ -25,7 +25,7 @@ const Nav = () => {
           <a href="">Mi portafolio</a>
         </li>
       </ul>
-      <FontAwesomeIcon  icon={faBars} onClick={() => mostrarMenu()}/>
+      <FontAwesomeIcon  icon={faBars} onClick={mostrarMenu}/>
       { menuMobile && <Menu ocultarMenu={ocultarMenu}></Menu>}
       
       <ul className="navbar-right">

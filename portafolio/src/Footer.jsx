@@ -4,7 +4,7 @@ import './CSS/Footer.css'
 
 const Footer = () => {
   return (
-    <footer className="border-top ">
+    <footer className="border-top " data-aos="fade-in">
       <div className="redes-sociales">
         <div className="contenedor-icono">
           <a href="https://github.com/Matias-S1lva" target="_blank">

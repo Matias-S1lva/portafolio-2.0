@@ -18,15 +18,13 @@ const Nav = () => {
 
   return (
     <nav className="navbar" >
-     
-      
       <ul className="navbar-left">
         <li>
           <a href="">Mi portafolio</a>
         </li>
       </ul>
       <FontAwesomeIcon  icon={faBars} onClick={mostrarMenu}/>
-      { menuMobile && <Menu ocultarMenu={ocultarMenu}></Menu>}
+      {menuMobile && <Menu ocultarMenu={ocultarMenu}></Menu>}
       
       <ul className="navbar-right">
         <li>

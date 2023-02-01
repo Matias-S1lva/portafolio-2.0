@@ -1,6 +1,6 @@
 const Menu = ({ ocultarMenu }) => {
   return (
-    <ul className="menu-oculto">
+    <ul className="menu-oculto" data-aos="fade-down">
       <li onClick={ocultarMenu}><a href="" style={{ pointerEvents: "none"}} >cerrar X</a></li>
       <li>
         <a href="#sobre-mi" onClick={ocultarMenu}>sobre mi</a>

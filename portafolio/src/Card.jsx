@@ -1,10 +1,10 @@
 import "./CSS/Card.css";
 
 const Card = ({ foto, title, color, description, tecnologies, children }) => {
-  const getAlt = (path) => {
-    return path.split("/")[-1];
+  const getAlt = (str) => {
+    str = str.split("/");
+    return str[str.length - 1];
   };
-
   return (
     <div className="card" style={color} data-aos="zoom-in">
       <img src={foto} alt={getAlt(foto)} />

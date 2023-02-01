@@ -108,7 +108,7 @@ const cards = [
     ],
   },
 ];
-
+let id = 0;
 const colores = [
   { background: "var(--red-sweet)" },
   { background: "var(--blue-light)" },
@@ -149,7 +149,7 @@ function App() {
       <About></About>
       <Section>
         {cards.map((card) => (
-          <Card
+          <Card key={id++}
             url={card.url}
             foto={card.foto}
             title={card.title}

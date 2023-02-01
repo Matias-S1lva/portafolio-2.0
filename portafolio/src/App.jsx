@@ -100,7 +100,7 @@ const changeColor = () => {
 };
 
 function App() {
-  useEffect(() => { AOS.init({duration:2000})}, [])
+  useEffect(() => { AOS.init({duration:3000})}, [])
   AOS.init();
   return (
     <>

@@ -53,16 +53,13 @@
   width: 32px;
   height: 32px;
 }
-.card-tecnologies h3 {
-  text-align: center;
-  margin: 8px 0;
-}
+
 .card-tecnologies {
   color: var(--fondo-about);
   background: var(--color-fondo);
-  padding: 0 16px;
+  padding: 8px 8px;
   border-radius: 8px;
-  width: 85%;
+  width: 56%;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -9,7 +9,7 @@ const Card = ({ url, foto, title, color, description, tecnologies }) => {
       <span>{title}</span>
       <p>{description}</p>
       <div className="card-tecnologies">
-        <h3 style={{ textAlign: "center" }}>Tecnologies:</h3>
+       
         {tecnologies.map((tecnologie) => (
           <img src={tecnologie} alt={tecnologie.split("/")[-1]} />
         ))}

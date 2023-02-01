@@ -23,7 +23,7 @@ const Contact = () => {
       )
       .then((response) => { 
         if(response.status === 200) setSucess(true) 
-        setTimeout(() => setSucess(false),3000)
+        setTimeout(() => setSucess(false),4000)
       })
       .catch((err) => console.error(err));
   };
